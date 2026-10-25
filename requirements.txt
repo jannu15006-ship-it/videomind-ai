@@ -1,0 +1,36 @@
+# ==========================================
+# VideoMind-AI Core Dependencies
+# ==========================================
+
+# 1. Video & Audio Ingestion / Processing
+yt-dlp>=2024.0.0            # High-performance YouTube & web stream downloader
+ffmpeg-python>=0.2.0        # Python wrapper for FFmpeg audio/video manipulation
+scenedetect[opencv]>=0.6.0  # Scene change detection to extract visual keyframes
+opencv-python-headless>=4.8 # Computer vision library for image manipulation without GUI overhead
+
+# 2. Multimodal AI & Representation Learning
+torch>=2.2.0                # Deep learning framework (PyTorch)
+torchvision>=0.17.0         # Computer vision models & transforms
+openai-whisper>=20231117    # Speech-to-text with word-level timestamps
+transformers>=4.40.0        # HuggingFace transformers (CLIP vision-language model)
+sentence-transformers>=3.0  # Dense embeddings & Cross-Encoder re-rankers
+pillow>=10.0.0              # Image manipulation & keyframe loading
+
+# 3. Vector Database & Storage
+chromadb>=0.5.0             # Embedded high-performance vector database
+
+# 4. Backend & API Services
+fastapi>=0.111.0            # Modern, high-performance async web framework
+uvicorn[standard]>=0.30.0   # Fast ASGI web server
+pydantic>=2.7.0             # Data validation and type enforcement
+pydantic-settings>=2.2.0    # Application settings and environment management
+python-dotenv>=1.0.0        # Load environment variables from .env files
+
+# 5. Frontend Dashboard
+streamlit>=1.35.0           # Interactive UI for data & AI applications
+
+# 6. Testing, Quality & HTTP Client
+pytest>=8.0.0               # Unit testing framework
+pytest-asyncio>=0.23.0      # Async test runner for FastAPI endpoints
+httpx>=0.27.0               # Async HTTP client for API testing
+ruff>=0.4.0                 # Blazing fast Python linter and formatter

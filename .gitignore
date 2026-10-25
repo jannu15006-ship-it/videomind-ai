@@ -1,0 +1,32 @@
+# Python bytecode and caches
+__pycache__/
+*.py[cod]
+*$py.class
+*.so
+.pytest_cache/
+.mypy_cache/
+.ruff_cache/
+
+# Virtual Environments
+.venv/
+venv/
+env/
+ENV/
+
+# Environment Variables & Secrets (CRITICAL: Never push API keys to GitHub!)
+.env
+*.env
+!.env.example
+
+# Large Data & Media files (Keep Git repo lightweight)
+data/raw_videos/*
+data/audio_cache/*
+data/keyframes/*
+data/chroma_db/*
+!data/**/.gitkeep
+
+# IDE and OS specific files
+.vscode/
+.idea/
+.DS_Store
+Thumbs.db
