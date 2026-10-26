@@ -66,10 +66,31 @@ videomind-ai/
 ## 📅 Engineering Progress Tracker
 
 - [x] **Day 1:** Project scaffolding, clean architecture, configuration manager & test suite.
-- [ ] **Day 2:** Video stream ingestion & audio extraction module.
+- [x] **Day 2:** Video stream ingestion & audio extraction module (`yt-dlp` + FFmpeg 16kHz WAV).
 - [ ] **Day 3:** Whisper speech-to-text with word-level timestamps.
 - [ ] **Day 4:** Visual scene detection & keyframe extraction.
 - [ ] **Day 5:** Visual embeddings with OpenAI CLIP.
 - [ ] **Day 6:** Temporal alignment of audio and visual frames.
 - [ ] **Day 7:** Sprint 1 milestone review & unit tests.
 - [ ] *(Days 8–28: Follows the [Production Engineering Roadmap](C:\Users\JANNU\.gemini\antigravity\brain\dcfecd71-b172-41ba-94ff-9e0b19960599\project_roadmap.md))*
+
+---
+
+## ⚡ Quickstart
+
+### 1. Ingest a Video Stream or Local File
+```bash
+# Ingest sample synthetic test video:
+python demo_ingest.py
+
+# Ingest an online YouTube lecture/stream:
+python demo_ingest.py --source "https://www.youtube.com/watch?v=..."
+
+# Ingest a local video file:
+python demo_ingest.py --source "path/to/lecture.mp4"
+```
+
+### 2. Run Automated Test Suite
+```bash
+pytest -v
+```
